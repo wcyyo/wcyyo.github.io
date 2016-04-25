@@ -219,111 +219,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/04/25/HelloBlog/" itemprop="url">
-                  通过Hexo+GitHubPage搭建的Blog
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-04-25T13:02:06+08:00" content="2016-04-25">
-              2016-04-25
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>  自2015年8月入职以来已经半年多了。迈入Web前端的坑中已有一段时间。身为一个前端小白，偶然的心思，想搭建自己的博客写一些东西。带着新鲜感，在网上查阅了文档，于是决定用Hexo+GitHubPage搭建自己的第一个Blog。</p>
-<h1 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h1><p>  1.<a href="https://nodejs.org/en/" title="Node.js官网" target="_blank" rel="external"><strong>Node.js</strong></a><br>  安装Node环境，从官网下载自己系统对应的版本安装即可。<br>  2.<a href="https://git-scm.com/" title="Git官网" target="_blank" rel="external"><strong>Git</strong></a><br>  从官网下载自己系统对应的版本安装即可，在Windows下，稍后需要用到Git Bash。<br>  3.<strong>申请GitHub账号</strong><br>  众所周知，Github是一个版本管理代码仓库，而GithubPage提供给我们一个免费的空间，我们大可把Blog搭建在这里。如果你需要一个域名的话，去这里<a href="https://sso.godaddy.com" title="Godaddy" target="_blank" rel="external"><strong>Goaddy</strong></a>买一个吧~</p>
-<h1 id="开始安装"><a href="#开始安装" class="headerlink" title="开始安装"></a>开始安装</h1><p><strong>全局安装Hexo</strong><br><!-- 代码段 --><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g</span><br></pre></td></tr></table></figure></p>
-<p><strong>初始化Hexo,本地调试</strong><br>新建你的项目文件夹，如blog<br><!-- 代码段 --><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd blog</span><br><span class="line">hexo init</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
-<p>浏览器输入<a href="http://localhost:4000，本地调试，查看效果。" target="_blank" rel="external">http://localhost:4000，本地调试，查看效果。</a><br>如果你成功看到了页面，就是搭建成功了。So easy！剩下的工作就是修改_config.yml文件的配置项(配置一些title、头像等配置项)，以及选择并clone心仪的主题。在此不过多叙述，本站用的是<a href="https://github.com/iissnan/hexo-theme-next" title="next主题" target="_blank" rel="external"><strong>next主题</strong></a>。</p>
-<h1 id="开始写作"><a href="#开始写作" class="headerlink" title="开始写作"></a>开始写作</h1><!-- 代码段 -->
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new HelloMyBlog</span><br></pre></td></tr></table></figure>
-<p>工程下的source目录下会生成HelloMyBlog.md的Markdown文件。采用<a href="https://github.com/younghz/Markdown" title="MarkDown" target="_blank" rel="external"><strong>Markdown</strong></a>语法便可以开始写Blog啦!</p>
-<h1 id="线上部署"><a href="#线上部署" class="headerlink" title="线上部署"></a>线上部署</h1><p>在GitHub上建立Repository命名为“your_user_name.github.io”修改config.yml文件的deploy配置项<br><!-- 代码段 --><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/your_user_name/your_user_name.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
-<p>然后执行命令安装hexo的deploy模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git--save</span><br></pre></td></tr></table></figure></p>
-<p>执行命令 进行部署<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
-<p>部署完成后就能在your_user_name.github.io路径下看到你的Blog了</p>
-
-          
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/04/25/hello/" itemprop="url">
                   通过Hexo+GitHubPage搭建的Blog
                 </a>
@@ -449,7 +344,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">1</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
