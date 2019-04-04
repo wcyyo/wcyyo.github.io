@@ -8,7 +8,7 @@ vssue-title: Hello, world!
 ---
 
 这是第一篇博文。
-选用了vuePress框架,vuepress-theme-meteorlxy主题
+选用了vuePress框架，vuepress-theme-meteorlxy主题
 
 <!-- more -->
 
