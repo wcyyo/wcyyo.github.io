@@ -4,4 +4,4 @@ sudo cp -r dist/* /
 git init
 git add -A
 git commit -m 'deploy'
-git push origin master
+git push origin master --force
