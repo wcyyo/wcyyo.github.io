@@ -1,4 +1,6 @@
+const pluginConf = require('./pluginConf.js');
 module.exports = {
+  plugins: pluginConf,
   title: "Wcy's Blog",
   description: 'This is my blog',
   locales: {
@@ -45,12 +47,7 @@ module.exports = {
       repo: 'wcyyo.github.io',
       clientId: '71d7454ceb301758d1af',
       clientSecret: '407e62bd2b784eac6d4fbfe1a1475c1f529f0f35'
-    },
-    plugins: [
-      ['@vuepress/google-analytics', {
-        ga: 'UA-137691426-1'
-      }]
-    ]
-    
-  },
+    }
+
+  }
 }
