@@ -8,7 +8,6 @@ module.exports = {
   },
   port: 5000,
   serviceWorker: false,
-  ga: 'UA-137691426-1',
   theme: 'meteorlxy',
   themeConfig: {
     lang: require('vuepress-theme-meteorlxy/lib/langs/zh-CN'),
@@ -47,5 +46,11 @@ module.exports = {
       clientId: '71d7454ceb301758d1af',
       clientSecret: '407e62bd2b784eac6d4fbfe1a1475c1f529f0f35'
     },
+    plugins: [
+      ['@vuepress/google-analytics', {
+        ga: 'UA-137691426-1'
+      }]
+    ]
+    
   },
 }
