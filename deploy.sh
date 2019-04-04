@@ -1,6 +1,6 @@
 set -e
 npm run build
-sudo cp -r dist/* /
+sudo cp -r dist/* ./
 git init
 git add -A
 git commit -m 'deploy'
