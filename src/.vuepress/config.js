@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'My Blog',
+  title: "Wcy's Blog",
   description: 'This is my blog',
   locales: {
     '/': {
