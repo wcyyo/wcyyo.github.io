@@ -42,8 +42,9 @@ module.exports = {
     ],
     // 评论配置，参考下方 [页面评论] 章节
     comments: {
+      baseURL:'https://github.com',
       owner: 'wcyyo',
-      repo: 'https://github.com/wcyyo/vssue-blog',
+      repo: 'vssue-blog',
       clientId: '71d7454ceb301758d1af',
       clientSecret: '407e62bd2b784eac6d4fbfe1a1475c1f529f0f35'
     },
