@@ -7,7 +7,7 @@ title: Hello, world!
 vssue-title: Hello, world!
 ---
 
-用vuePress搭建博客
+我的新博客
 
 
 <!-- more -->
